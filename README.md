@@ -9,3 +9,4 @@ Things that are on the ToDo list:
 -	board-board interface: Will be re-routed to support the zynq RGMII Interface.
 -	USB current limit: The USB current limit can be bypassed with a MOSFET controlled by the FPGA. This will be reworked in future revisions
 -	PCB Designrules: The current PCB Fab designrules required by the layout are 80um trace clearance and thickness. This will be reworked (if possible) in future revisions.
+-	Input buffers: the analog input buffers are there to support high impedance sensors. The chosen resistance values are just placeholders right now. We choose discrete buffers for every channel to get rid of charge injection through a MUX which would be especially bad for high impedance sensors. Currently the input pins of the FPGA adds a parasitic resistance to the analog nodes. We will rework that in future revisions.
